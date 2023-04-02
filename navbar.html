@@ -1,73 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Navbar Atas</title>
+	<title>Contoh Navbar</title>
 	<style>
-		/* Styling navbar */
 		.navbar {
-			background-color: #333;
-			overflow: hidden;
+			background-color: black;
+			color: white;
 			display: flex;
+			align-items: center;
 			justify-content: space-between;
-			align-items: center;
 			padding: 10px;
-			color: white;
 		}
-
-		/* Styling link pada navbar */
-		.navbar a {
-			color: white;
-			text-decoration: none;
-			margin-left: 10px;
-		}
-
-		/* Styling link pada navbar ketika dihover */
-		.navbar a:hover {
-			color: #ddd;
-		}
-
-		/* Styling teks "pembangunan" */
-		.brand {
-			font-size: 20px;
-			font-weight: bold;
-			margin-left: 10px;
-		}
-
-		/* Styling logo keranjang */
-		.cart {
+		.navbar-logo {
 			display: flex;
 			align-items: center;
+			font-size: 15px;
+			font-weight: bold;
+		}
+		.navbar-logo img {
+			height: 30px;
 			margin-right: 10px;
 		}
-
-		/* Styling logo login */
-		.login {
+		.navbar-menu {
 			display: flex;
 			align-items: center;
 		}
-
-		/* Styling logo */
-		.logo {
+		.navbar-menu a {
+			color: white;
+			margin-right: 20px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.navbar-menu a:last-child {
+			margin-right: 0;
+		}
+		.navbar-menu img {
 			height: 20px;
 			margin-left: 10px;
 		}
 	</style>
+    <style>
+		body {
+			font-family: 'Inter', sans-serif;
+		}
+	</style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <style>
+		.logo {
+			filter: invert(100%);
+		}
+	</style>
 </head>
 <body>
-	<!-- Navbar -->
 	<div class="navbar">
-		<!-- Teks "pembangunan" -->
-		<div class="brand">Pembangunan</div>
-
-		<!-- Link "Home", "Orders", dan "About" -->
-		<div class="links">
+		<div class="navbar-logo">
+			Perbangunan
+		</div>
+		<div class="navbar-menu">
 			<a href="#">Home</a>
 			<a href="#">Orders</a>
 			<a href="#">About</a>
-        <!-- Logo keranjang dan Logo login -->
-            <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart" class="logo">
+			<img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart" class="logo">
             <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Login" class="logo">
-        </div>
+		</div>
 	</div>
 </body>
 </html>
