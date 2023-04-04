@@ -178,12 +178,41 @@ a {
 	filter: invert(100%);
 }
 
-.footer {
-	background-color: #f2f2f2;
-	color: #333;
-	padding: 20px;
-	text-align: center;
+.opsiFooter {
+	font-size: small;
+	line-height: 1.5;
+}
+
+.footerKiri {
+	background-color: black;
+	color: white;
+	padding: 25px;
+	text-align: left;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+
+.footerTengah {
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 90%;
+}
+
+.footerTengah2 {
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 110%;
+}
+
+.footerKanan {
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 180%;
 }
