@@ -1,20 +1,29 @@
 /* tulisan slogan */
-*{
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
-.countainer1{
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+a {
+	color: inherit !important;
+	text-decoration: none !important;
+}
+
+.countainer1 {
 	display: flex;
 	align-items: center;
-	justify-content:space-around;
+	justify-content: space-around;
 }
 
 .slogan {
 	/* position: absolute; */
 	/* width: 544px; */
-	 /* height: 194px;
+	/* height: 194px;
 	padding: 40px;
 	top: 352px; */
 }
@@ -36,14 +45,15 @@
 	/* top: 914px; */
 	background: #E28F11;
 	border-radius: 8px;
+	color: white !important;
 }
 
-a{
+a {
 	color: white;
 	text-decoration: none;
 }
 
-.container2{
+.container2 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -75,7 +85,8 @@ a{
 	height: 32px;
 	left: 873px;
 	top: 1393px;
-} */ */
+} */
+*/
 
 /* Gambar 1 */
 .gambar1 {
@@ -85,7 +96,7 @@ a{
 	/* height: 662px; */
 	/* left: 768px; */
 	/* top: 120px; */
-	
+
 }
 
 /* Gambar 2*/
@@ -102,19 +113,77 @@ a{
 	height: 400px;
 }
 
-.konten{
-    /* background: #205295; */
-    padding: 30px;
-    margin: 20px auto;
-    width: 50%;
-    display: grid;
-    place-items: center;
-    border-radius: 5px;
-    font-weight: bold;
-    background-color: gray;
-    /* backdrop-filter:blur(20px); */
-   
+.konten {
+	/* background: #205295; */
+	padding: 30px;
+	margin: 20px auto;
+	width: 50%;
+	display: grid;
+	place-items: center;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: gray;
+	/* backdrop-filter:blur(20px); */
+
 }
-.card{
-    box-shadow: 0 5px 5px 0 rgb(10, 10, 10);
+
+.card {
+	box-shadow: 0 5px 5px 0 rgb(10, 10, 10);
+}
+
+
+.navbar {
+	background-color: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.navbar-logo {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.navbar-logo img {
+	height: 30px;
+	margin-right: 10px;
+}
+
+.navbar-menu {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-menu a {
+	color: white;
+	margin-right: 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.navbar-menu a:last-child {
+	margin-right: 0;
+}
+
+.navbar-menu img {
+	height: 20px;
+	margin-left: 10px;
+}
+
+.logo {
+	filter: invert(100%);
+}
+
+.footer {
+	background-color: #f2f2f2;
+	color: #333;
+	padding: 20px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
