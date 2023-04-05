@@ -179,8 +179,8 @@ a {
 }
 
 .opsiFooter {
-	font-size: small;
-	line-height: 1.5;
+	font-size: x-small;
+	line-height: 0%;
 }
 
 .footerKiri {
@@ -191,6 +191,8 @@ a {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	font-size: small;
+	line-height: 5%;
 }
 
 .footerTengah {
@@ -199,6 +201,8 @@ a {
 	position: fixed;
 	bottom: 0;
 	width: 90%;
+	font-size: small;
+	line-height: 5%;
 }
 
 .footerTengah2 {
@@ -207,6 +211,8 @@ a {
 	position: fixed;
 	bottom: 0;
 	width: 110%;
+	font-size: small;
+	line-height: 5%;
 }
 
 .footerKanan {
@@ -215,6 +221,14 @@ a {
 	position: fixed;
 	bottom: 0;
 	width: 180%;
+	font-size: small;
+	line-height: 5%;
+}
+
+.logoSosmed {
+	line-height: 0%;
+  font-size: small;
+  text-decoration: none;
 }
 
 .footer {
