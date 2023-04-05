@@ -1,0 +1,232 @@
+/* tulisan slogan */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+a {
+	color: inherit !important;
+	text-decoration: none !important;
+}
+
+.countainer1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.slogan {
+	/* position: absolute; */
+	/* width: 544px; */
+	/* height: 194px;
+	padding: 40px;
+	top: 352px; */
+}
+
+/* tombol */
+.button {
+	display: flex;
+	/* flex-direction: row; */
+	justify-content: center;
+	align-items: center;
+	/* padding: 34px 90px; */
+	/* gap: 10px; */
+	/* position: absolute; */
+	margin: 50px auto;
+	width: 200px;
+	padding: 20px;
+	/* height: 112px; */
+	/* left: 484px; */
+	/* top: 914px; */
+	background: #E28F11;
+	border-radius: 8px;
+	color: white !important;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.container2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Kontak Kami */
+.contact {
+	margin: 30px;
+	/* position: absolute;
+	width: 221px;
+	height: 44px;
+	left: 873px;
+	top: 1277px; */
+}
+
+/* Telepon */
+/* .contact p:first-of-type {
+	position: absolute;
+	width: 246px;
+	height: 32px;
+	left: 873px;
+	top: 1339px;
+}
+
+/* email */
+/* .contact p:last-of-type {
+	position: absolute;
+	width: 324px;
+	height: 32px;
+	left: 873px;
+	top: 1393px;
+} */
+*/
+
+/* Gambar 1 */
+.gambar1 {
+	margin: 30px;
+	/* position: absolute; */
+	/* width: 631px; */
+	/* height: 662px; */
+	/* left: 768px; */
+	/* top: 120px; */
+
+}
+
+/* Gambar 2*/
+.gambar2 {
+	/* height: 100px; */
+	/* position: absolute;
+	width: 574px;
+	height: 513px;
+	left: 244px;
+	top: 1179px; */
+}
+
+.gambar2 img {
+	height: 400px;
+}
+
+.konten {
+	/* background: #205295; */
+	padding: 30px;
+	margin: 20px auto;
+	width: 50%;
+	display: grid;
+	place-items: center;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: gray;
+	/* backdrop-filter:blur(20px); */
+
+}
+
+.card {
+	box-shadow: 0 5px 5px 0 rgb(10, 10, 10);
+}
+
+
+.navbar {
+	background-color: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.navbar-logo {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.navbar-logo img {
+	height: 30px;
+	margin-right: 10px;
+}
+
+.navbar-menu {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-menu a {
+	color: white;
+	margin-right: 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.navbar-menu a:last-child {
+	margin-right: 0;
+}
+
+.navbar-menu img {
+	height: 20px;
+	margin-left: 10px;
+}
+
+.logo {
+	filter: invert(100%);
+}
+
+.opsiFooter {
+	font-size: x-small;
+	line-height: 0%;
+}
+
+.footerKiri {
+	background-color: black;
+	color: white;
+	padding: 15px;
+	text-align: left;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: small;
+	line-height: 5%;
+}
+
+.footerTengah {
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 90%;
+	font-size: small;
+	line-height: 5%;
+}
+
+.footerTengah2 {
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 110%;
+	font-size: small;
+	line-height: 5%;
+}
+
+.footerKanan {
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 180%;
+	font-size: small;
+	line-height: 5%;
+}
+
+.logoSosmed {
+	line-height: 0%;
+    font-size: small;
+    text-decoration: none;
+}
