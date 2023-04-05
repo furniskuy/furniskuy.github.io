@@ -186,7 +186,7 @@ a {
 .footerKiri {
 	background-color: black;
 	color: white;
-	padding: 15px;
+	padding: 25px;
 	text-align: left;
 	position: fixed;
 	bottom: 0;
@@ -227,6 +227,23 @@ a {
 
 .logoSosmed {
 	line-height: 0%;
-    font-size: small;
-    text-decoration: none;
+  font-size: small;
+  text-decoration: none;
+}
+
+.footer {
+	background-color: #0A061C;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.footer a {
+	color: white;
 }
