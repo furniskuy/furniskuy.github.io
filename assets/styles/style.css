@@ -229,3 +229,30 @@ a {
 	flex-basis: 50%;
 	justify-content: space-around;
 }
+
+.OurTeam {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+	flex-direction: column;
+	align-items: center;
+}
+
+.OurFoto {
+	margin-top: 30px;
+	display: flex;
+	gap: 100px;
+	justify-content: space-between;
+}
+
+.OurFoto2 {
+	margin-top: 30px;
+}
+
+.OurFoto-1 {
+	width: 240px;
+	height: 240px;
+	object-fit: cover;
+	border-radius: 50%;
+	object-position: 0 0.2px;
+}
