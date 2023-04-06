@@ -1,16 +1,28 @@
-/* tulisan slogan */
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
-
 }
-body::-webkit-scrollbar{
+
+html {
+	height: 100%;
+}
+
+body::-webkit-scrollbar {
 	display: none;
 }
+
 body {
+	position: relative;
+	min-height: 100%;
 	font-family: 'Inter', sans-serif;
-	/* font-size: 20px; */
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.content {
+	margin: 50px 0px;
 }
 
 a {
@@ -22,32 +34,42 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	padding-top: 50px;
 }
 
 .slogan {
-	/* position: absolute; */
-	/* width: 544px; */
-	/* height: 194px;
-	padding: 40px;
-	top: 352px; */
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.slogan .sub-head {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #E28F11;
+}
+
+.slogan .head {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+	color: #000000;
+}
+
+.slogan .sub {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
 }
 
 /* tombol */
 .button {
 	display: flex;
-	/* flex-direction: row; */
 	justify-content: center;
 	align-items: center;
-	/* padding: 34px 90px; */
-	/* gap: 10px; */
-	/* position: absolute; */
 	margin: 50px auto;
 	width: 200px;
 	padding: 20px;
-	/* height: 112px; */
-	/* left: 484px; */
-	/* top: 914px; */
 	background: #E28F11;
 	border-radius: 8px;
 	color: white !important;
@@ -62,84 +84,30 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 50px ;
 }
 
-/* Kontak Kami */
 .contact {
 	margin: 30px;
-	/* position: absolute;
-	width: 221px;
-	height: 44px;
-	left: 873px;
-	top: 1277px; */
-}
-
-/* Telepon */
-/* .contact p:first-of-type {
-	position: absolute;
-	width: 246px;
-	height: 32px;
-	left: 873px;
-	top: 1339px;
-}
-
-/* email */
-/* .contact p:last-of-type {
-	position: absolute;
-	width: 324px;
-	height: 32px;
-	left: 873px;
-	top: 1393px;
-} */
-*/
-
-/* Gambar 1 */
-.gambar1 {
-	margin: 30px;
-	/* position: absolute; */
-	/* width: 631px; */
-	/* height: 662px; */
-	/* left: 768px; */
-	/* top: 120px; */
-
-}
-
-/* Gambar 2*/
-.gambar2 {
-	/* height: 100px; */
-	/* position: absolute;
-	width: 574px;
-	height: 513px;
-	left: 244px;
-	top: 1179px; */
 }
 
 .gambar2 img {
 	height: 400px;
 }
 
-.konten {
-	/* background: #205295; */
+.kontencard {
 	padding: 30px;
 	margin: 20px auto;
 	width: 50%;
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	place-items: center;
 	border-radius: 5px;
 	font-weight: bold;
-	background-color: gray;
-	/* backdrop-filter:blur(20px); */
 
 }
-
-.card {
-	box-shadow: 0 5px 5px 0 rgb(10, 10, 10);
-}
-
 
 .navbar {
-	background-color: black;
+	background-color: #0A061C;
 	color: white;
 	display: flex;
 	align-items: center;
@@ -169,6 +137,14 @@ a {
 	margin-right: 20px;
 	text-decoration: none;
 	font-weight: bold;
+	width: fit-content;
+	height: fit-content;
+}
+
+.navbar-menu a:has(img) {
+	display: flex;
+	width: fit-content;
+	height: fit-content;
 }
 
 .navbar-menu a:last-child {
@@ -177,6 +153,7 @@ a {
 
 .navbar-menu img {
 	height: 20px;
+	width: 32;
 	margin-left: 10px;
 }
 
@@ -200,16 +177,17 @@ a {
 }
 
 .logoSosmed {
-  line-height: 0%;
-  font-size: small;
-  width: 70%;
-  text-decoration: none;
-  display: flex;
-  gap: 15px;
+	line-height: 0%;
+	font-size: small;
+	width: 70%;
+	text-decoration: none;
+	display: flex;
+	gap: 15px;
 }
 
 .logo {
 	width: 18px;
+	fill: white;
 }
 
 .footer {
@@ -218,13 +196,26 @@ a {
 	display: flex;
 	align-items: center;
 	padding: 10px;
-	bottom: 0;
+	width: 100%;
 }
 
-.footerTengah p,.footerTengah2 p,.footerKanan p{
+.footer p {
+	margin-bottom: 1rem;
+}
+
+.footer-item {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.footerTengah p,
+.footerTengah2 p,
+.footerKanan p {
 	margin-bottom: 0;
 }
-.footer2{
+
+.footer2 {
 	display: flex;
 	flex-basis: 50%;
 	justify-content: space-around;

@@ -34,10 +34,14 @@
 
     <div class="content">
         <div class="kontencard">
-            <div>
-                <h1>LOGIN</h1>
+            <form>
+                <h1>Register</h1>
                 <div class="input-email">
                     <span>Email</span>
+                    <input type="text" placeholder="Masukan Email">
+                </div>
+                <div class="input-email">
+                    <span>Username</span>
                     <input type="text" placeholder="Masukan Email">
                 </div>
                 <div class="input-password">
@@ -49,22 +53,37 @@
                             <img src="assets/icons/hide.png" id="hide" width="20px" height="20px" hidden>
                         </div>
                     </div>
-
                 </div>
+                <div class="input-password">
+                    <span>Ketik Ulang Password</span>
+                    <div class="class-pw">
+                        <input id="password" type="password" placeholder="Masukan Password">
+                        <div id="toggle">
+                            <img src="assets/icons/view.png" id="view" width="20px" height="20px">
+                            <img src="assets/icons/hide.png" id="hide" width="20px" height="20px" hidden>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="agreement" name="agreement" value="agreement">
+                    <label for="agreement">Saya setuju dengan syarat dan ketentuan</label>
+                </div>
+
                 <div class="btn">
-                    <button>
-                        <a href="/">
+                    <a href="/">
+                        <button>
+                            Register
+                        </button>
+                    </a>
+                    <span>Sudah punya akun?</span>
+                    <button class="btn-link">
+                        <a href="login.html">
                             Login
                         </a>
                     </button>
-                    <span>Belum punya akun?</span>
-                    <button class="btn-link">
-                        <a href="register.html">
-                            Register
-                        </a>
-                    </button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
@@ -114,14 +133,17 @@
         </div>
     </footer>
 
-    <script>
-        let password = document.getElementById('password')
-        let toggle = document.getElementById('toggle')
 
-        let view = document.getElementById('view')
-        let hide = document.getElementById('hide')
+    <script>
+        let password = document.getElementById('password');
+        let toggle = document.getElementById('toggle');
+
+        let view = document.getElementById('view');
+        let hide = document.getElementById('hide');
 
         toggle.addEventListener('click', () => {
+            console.log(1)
+            console.log(password.type)
             if (password.type === 'password') {
                 password.setAttribute('type', 'text');
                 view.setAttribute('hidden', '');

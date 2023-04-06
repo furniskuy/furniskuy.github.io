@@ -1,0 +1,86 @@
+.kontencard {
+    margin: 0 auto;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    align-items: center;
+}
+
+.class-pw {
+    display: flex;
+}
+
+#toggle {
+    font-size: 13px;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.input-email,
+.input-password,
+.btn,
+h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-password {
+    margin-bottom: 15px;
+}
+
+input {
+    align-items: center;
+    width: 450px;
+    height: 55px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+input:nth-child(1) {
+    margin-bottom: 0;
+}
+
+button {
+    background: #E28F11;
+    border-radius: 8px;
+    width: 190px;
+    height: 77px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    align-items: center;
+}
+
+.btn-link {
+    background-color: white;
+}
+
+button:last-child a {
+    color: #E28F11;
+}
+
+.checkbox {
+    margin-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+}
