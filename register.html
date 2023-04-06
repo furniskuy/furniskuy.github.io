@@ -22,9 +22,9 @@
             Perbangunan
         </div>
         <div class="navbar-menu">
-            <a href="/">Home</a>
+            <a href="index.html">Home</a>
             <a href="#">Orders</a>
-            <a href="/about.html">About</a>
+            <a href="about.html">About</a>
             <a href="#" style="margin-right: 0px !important;">
                 <img src="assets/icons/cart.svg" alt="Cart" class="logo">
             </a>
@@ -57,7 +57,7 @@
                 <div class="input-password">
                     <span>Ketik Ulang Password</span>
                     <div class="class-pw">
-                        <input id="password" type="password" placeholder="Masukan Password">
+                        <input id="repassword" type="password" placeholder="Masukan Password">
                         <div id="toggle">
                             <img src="assets/icons/view.png" id="view" width="20px" height="20px">
                             <img src="assets/icons/hide.png" id="hide" width="20px" height="20px" hidden>
@@ -72,7 +72,7 @@
 
                 <div class="btn">
                     <a href="/">
-                        <button>
+                        <button id="submit">
                             Register
                         </button>
                     </a>
@@ -106,8 +106,12 @@
             <div class="footerTengah">
                 <p><strong>Akun</strong></p>
                 <div class="opsiFooter">
-                    <p>Login</p>
-                    <p>Signup</p>
+                    <p>
+                        <a href="login.html">Login</a>
+                    </p>
+                    <p>
+                        <a href="register.html">Signup</a>
+                    </p>
                     <P>Orders</P>
                 </div>
             </div>
@@ -136,10 +140,14 @@
 
     <script>
         let password = document.getElementById('password');
+        let repassword = document.getElementById('repassword');
         let toggle = document.getElementById('toggle');
+        const agreement = document.getElementById('agreement');
+        const submit = document.getElementById('submit');
 
         let view = document.getElementById('view');
         let hide = document.getElementById('hide');
+
 
         toggle.addEventListener('click', () => {
             console.log(1)
@@ -152,6 +160,17 @@
                 password.setAttribute('type', 'password');
                 hide.setAttribute('hidden', '');
                 view.removeAttribute('hidden');
+            }
+        });
+
+        submit.addEventListener('click', () => {
+            // harus setuju dengan syarat dan ketentuan
+            if (!agreement.checked) {
+                alert('Anda harus setuju dengan syarat dan ketentuan');
+            }
+
+            if (password.value !== repassword.value) {
+                alert('Password tidak sama');
             }
         });
     </script>
